@@ -19,7 +19,7 @@ class MyWindow(QMainWindow, Ui_MainWindow): #成调用qt designer生的界面类
 
         else:
             month = str[0:2]
-            day = str[2:4]
+            day = str[3:5]
 
         search = collector.Day(month, day)
         result_dict = search.get_thing()        #通过API接口查询
